@@ -30,5 +30,6 @@ EDITOR: Visual Studio Code
 BROWSER: Google Chrome
 
 #OUTPUT
+
 <img width="436" height="874" alt="Image" src="https://github.com/user-attachments/assets/1fe4cdae-ebcb-4012-8120-1e264cfac38c" />
 <img width="371" height="878" alt="Image" src="https://github.com/user-attachments/assets/ad7f78d3-adcf-4a37-835f-bf19dc807a3d" />
