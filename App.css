@@ -1,0 +1,141 @@
+body{
+margin:0;
+background:#f4f6f8;
+font-family:Inter,Segoe UI,Arial,sans-serif;
+color:#1f2933;
+}
+
+.chat-container{
+max-width:480px;
+height:100vh;
+margin:auto;
+display:flex;
+flex-direction:column;
+background:white;
+border-left:1px solid #e5e7eb;
+border-right:1px solid #e5e7eb;
+}
+
+.header{
+padding:16px;
+font-size:18px;
+font-weight:600;
+text-align:center;
+border-bottom:1px solid #e5e7eb;
+background:#ffffff;
+}
+
+.messages{
+flex:1;
+overflow-y:auto;
+padding:20px;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.msg{
+max-width:72%;
+padding:12px 14px;
+border-radius:12px;
+font-size:14.5px;
+line-height:1.5;
+box-shadow:0 1px 2px rgba(0,0,0,.06);
+animation:fade .15s ease;
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(4px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.me{
+align-self:flex-end;
+background:#2563eb;
+color:white;
+border-bottom-right-radius:4px;
+}
+
+.other{
+align-self:flex-start;
+background:#f1f5f9;
+color:#1f2933;
+border-bottom-left-radius:4px;
+}
+
+.time{
+font-size:11px;
+opacity:.6;
+margin-top:6px;
+text-align:right;
+}
+
+.input-area{
+display:flex;
+padding:14px;
+gap:10px;
+border-top:1px solid #e5e7eb;
+background:#ffffff;
+}
+
+.input-area input{
+flex:1;
+padding:12px 14px;
+border-radius:10px;
+border:1px solid #d1d5db;
+font-size:14px;
+outline:none;
+transition:.15s;
+}
+
+.input-area input:focus{
+border-color:#2563eb;
+box-shadow:0 0 0 2px rgba(37,99,235,.15);
+}
+
+.input-area button{
+background:#2563eb;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:10px;
+font-weight:600;
+cursor:pointer;
+transition:.15s;
+}
+
+.input-area button:hover{
+background:#1d4ed8;
+}
+
+.join-screen{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:16px;
+background:#f4f6f8;
+}
+
+.join-screen h2{
+font-weight:600;
+}
+
+.join-screen input{
+padding:12px 14px;
+width:240px;
+border-radius:10px;
+border:1px solid #d1d5db;
+outline:none;
+}
+
+.join-screen button{
+padding:12px 26px;
+border:none;
+background:#2563eb;
+color:white;
+border-radius:10px;
+font-weight:600;
+cursor:pointer;
+}
